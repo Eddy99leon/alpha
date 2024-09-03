@@ -10,7 +10,7 @@ import Profil from './pages/Profil'
 const App = () => {
   return (
     <div className='bg-gray-950 w-full min-h-screen text-white'>
-      <div className='max-w-3xl mx-auto w-full min-h-screen flex flex-col justify-between'>
+      <div className='max-w-5xl mx-auto w-full min-h-screen flex flex-col justify-between'>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />

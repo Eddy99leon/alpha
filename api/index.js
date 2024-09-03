@@ -6,6 +6,7 @@ import dotenv from "dotenv";
 import userRoutes from "./routes/user.js";
 import authRoutes from "./routes/auths.js";
 import messageRoutes from "./routes/message.js";
+import aiRoutes from "./routes/ai.js";
 
 
 //middleware
@@ -30,6 +31,7 @@ mongoose
 app.use("/api/users", userRoutes);
 app.use("/api/auths", authRoutes);
 app.use("/api/messages", messageRoutes);
+app.use("/api/verification", aiRoutes);
 
 
 //connection to the serveur
